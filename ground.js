@@ -1,13 +1,14 @@
 class ground  {
     constructor(x,y,w,h)
     {
-        //this.body = new rectangle(x,y,w,h)
+        
         var x,y,w,h;
         this.x=x
         this.y = y
-        this.h = h
         this.w = w
-        //World.add(world,this.body)
+        this.h = h
+        this.body = Bodies.rectangle(x,y,w,h)
+        World.add(world,this.body)
     }
     display()
     {
